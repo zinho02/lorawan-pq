@@ -1,0 +1,1 @@
+ -DQRUOV_PRG_SHAKE -DQRUOV_dir=qruov3q31L3v246m87 -DQRUOV_security_strength_category=3 -DQRUOV_q=31 -DQRUOV_L=3 -DQRUOV_v=246 -DQRUOV_m=87 -DQRUOV_fc=1 -DQRUOV_fe=1 -DQRUOV_fc0=1
