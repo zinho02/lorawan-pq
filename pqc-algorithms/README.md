@@ -213,3 +213,15 @@ Test:
 cd build/generator
 ./benchmark_sign
 ```
+
+## MQOM
+Build:
+```
+cd mqom-submission-round2/submission_package/Reference_Implementation//mqom_cat1_gf251_fast
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
+```
