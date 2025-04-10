@@ -31,6 +31,8 @@ cd apps
 ./benchmark_sign_mayo_1
 ```
 
+
+
 ## HAWK
 Build:
 ```sh
@@ -71,7 +73,7 @@ cd build/bin
 ## LESS
 Build:
 ```
-cd less-submission-round2/perk/Utilities/Benchmarking
+cd less-submission-round2/Submission_LESS_Round2/Utilities/Benchmarking
 mkdir build
 cd build
 cmake -DUSE_REFERENCE=1 ..
@@ -81,4 +83,28 @@ make benchmark_sign252_68
 Test:
 ```sh
 ./benchmark_sign252_68
+```
+
+## UOV
+Build:
+```
+cd uov-submission-round2/Reference_Implementation
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
+```
+
+## ML-DSA
+Build:
+```
+cd dilithium-round3/Dilithium/dilithium/Reference_Implementation/crypto_sign/dilithium2
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
 ```
