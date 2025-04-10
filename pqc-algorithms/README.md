@@ -212,7 +212,6 @@ make benchmark_sign
 
 Test:
 ```sh
-cd generator
 ./benchmark_sign
 ```
 
