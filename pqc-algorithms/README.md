@@ -217,7 +217,7 @@ cd build/generator
 ## MQOM
 Build:
 ```
-cd mqom-submission-round2/submission_package/Reference_Implementation//mqom_cat1_gf251_fast
+cd mqom-submission-round2/submission_package_v2/Reference_Implementation/mqom2_cat1_gf256_fast_r3
 make benchmark_sign
 ```
 
