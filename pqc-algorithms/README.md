@@ -122,3 +122,16 @@ Test:
 cd build
 ./benchmark_sign
 ```
+
+## SLH-DSA
+Build:
+```
+cd SPHINCS-round3/NIST-PQ-Submission-SPHINCS-20201001/Reference_Implementation/crypto_sign/sphincs-haraka-128f-simple
+make benchmark_sign
+```
+
+Test:
+```sh
+cd build
+./benchmark_sign
+```
