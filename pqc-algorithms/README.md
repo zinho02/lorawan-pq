@@ -31,4 +31,13 @@ cd apps
 ./benchmark_sign_mayo_1
 ```
 
-## 
+## HAWK
+```sh
+cd hawk-submission-round2/NIST-SUBMISSION/Reference_Implementation/hawk512
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
+```
