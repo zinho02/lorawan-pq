@@ -6,12 +6,13 @@ cd sqisign-submission-round2/Reference_Implementation
 mkdir -p build
 cd build
 cmake -DSQISIGN_BUILD_TYPE=ref ..
-make benchmark_sign
+make benchmark_sign_lvl1
 ```
 
 Test:
 ```sh
-./benchmark_sign
+cd apps
+./benchmark_sign_lvl1
 ```
 
 ## MAYO
@@ -197,4 +198,18 @@ Test:
 ```sh
 cd bin
 ./benchmark_sign_1_RSDPG_SPEED
+```
+
+## SDitH
+Build:
+```
+cd cross-submission-round2/Additional_Implementations/Benchmarking
+cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+cmake --build build
+```
+
+Test:
+```sh
+cd build/generator
+./benchmark_sign
 ```
