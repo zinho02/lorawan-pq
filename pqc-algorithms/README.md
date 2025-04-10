@@ -47,13 +47,12 @@ Test:
 Build:
 ```sh
 cd snova-submission-round2/SNOVA_Round2/Reference_Implementation
-make all
-
+make benchmark_sign
 ```
 
 Test:
 ```sh
-./benchmark_sign
+./benchmark_sign.a
 ```
 
 ## PERK
