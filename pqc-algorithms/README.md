@@ -1,3 +1,6 @@
+# Benchmark
+The [benchmark_sign.c](benchmark_sign.c) file was used to benchmark the results.
+
 ## SQISign
 
 Build:
@@ -203,14 +206,13 @@ cd bin
 ## SDitH
 Build:
 ```
-cd cross-submission-round2/Additional_Implementations/Benchmarking
-cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
-cmake --build build
+cd sdith-submission/sdith/Reference_Implementation/Threshold_Variant/sdith_threshold_cat1_p251
+make benchmark_sign 
 ```
 
 Test:
 ```sh
-cd build/generator
+cd generator
 ./benchmark_sign
 ```
 
