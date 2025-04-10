@@ -4,7 +4,7 @@
 #include <time.h>
 #include <math.h>
 
-#include "api.h" // NIST PQC API: provides crypto_sign_keypair, crypto_sign, crypto_sign_open
+#include "api.h"
 
 #define ITERATIONS 10000
 #define MESSAGE_LEN 32
