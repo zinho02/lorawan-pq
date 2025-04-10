@@ -31,8 +31,6 @@ cd apps
 ./benchmark_sign_mayo_1
 ```
 
-
-
 ## HAWK
 Build:
 ```sh
@@ -134,4 +132,69 @@ Test:
 ```sh
 cd build
 ./benchmark_sign
+```
+
+## FAEST
+Build:
+```
+cd faest-submission-round2/nist_submission_round2/Reference_Implementation/crypto_sign/faest_128f
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
+```
+
+## MiRitH
+Build:
+```
+cd mirith-submission/mirith_nist_submission-main/Reference_Implementation/mirith_Ia_fast/test
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
+```
+
+## MIRA
+Build:
+```
+cd MIRA-submission/MIRA/Reference_Implementation/MIRA-128F
+make benchmark_sign
+```
+
+Test:
+```sh
+cd bin
+./benchmark_sign
+```
+
+## QR-UOV
+Build:
+```
+cd qr-uov-submission-round2/QR_UOV - Round2/Reference_Implementation/qruov1q127L3v156m54/refa
+make benchmark_sign
+```
+
+Test:
+```sh
+./benchmark_sign
+```
+
+## CROSS
+Build:
+```
+cd cross-submission-round2/Additional_Implementations/Benchmarking
+mkdir build
+cd build
+cmake -DREFERENCE=1 ..
+make benchmark_sign_1_RSDPG_SPEED
+```
+
+Test:
+```sh
+cd bin
+./benchmark_sign_1_RSDPG_SPEED
 ```
