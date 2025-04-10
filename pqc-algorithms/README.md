@@ -32,6 +32,7 @@ cd apps
 ```
 
 ## HAWK
+Build:
 ```sh
 cd hawk-submission-round2/NIST-SUBMISSION/Reference_Implementation/hawk512
 make benchmark_sign
@@ -40,4 +41,45 @@ make benchmark_sign
 Test:
 ```sh
 ./benchmark_sign
+```
+
+## SNOVA
+Build:
+```sh
+cd snova-submission-round2/SNOVA_Round2/Reference_Implementation
+make all
+
+```
+
+Test:
+```sh
+./benchmark_sign
+```
+
+## PERK
+Build:
+```
+cd perk-submission-round2/perk/Reference_Implementation/perk-128-fast-3
+make benchmark_sign
+```
+
+Test:
+```sh
+cd build/bin
+./benchmark_sign
+```
+
+## LESS
+Build:
+```
+cd less-submission-round2/perk/Utilities/Benchmarking
+mkdir build
+cd build
+cmake -DUSE_REFERENCE=1 ..
+make benchmark_sign252_68
+```
+
+Test:
+```sh
+./benchmark_sign252_68
 ```
