@@ -108,3 +108,17 @@ Test:
 ```sh
 ./benchmark_sign
 ```
+
+## Falcon
+Build:
+```
+cd falcon-round3/falcon-round3/Reference_Implementation/falcon512/falcon512int
+mkdir build
+make build/benchmark_sign
+```
+
+Test:
+```sh
+cd build
+./benchmark_sign
+```
