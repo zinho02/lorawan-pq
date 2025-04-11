@@ -50,7 +50,7 @@ Test:
 ## SNOVA
 Build:
 ```sh
-cd snova-submission-round2/SNOVA_Round2/Reference_Implementation
+cd snova-submission-round2/SNOVA_Round2/Reference_Implementation/src
 make benchmark_sign
 ```
 
