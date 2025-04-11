@@ -90,7 +90,7 @@ Test:
 ## UOV
 Build:
 ```
-cd uov-submission-round2/Reference_Implementation
+cd uov-submission-round2/UOV/Reference_Implementation
 make benchmark_sign
 ```
 
