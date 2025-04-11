@@ -178,8 +178,9 @@ cd bin
 ## QR-UOV
 Build:
 ```
-cd qr-uov-submission-round2/QR_UOV - Round2/Reference_Implementation/qruov1q127L3v156m54/refa
-make benchmark_sign
+cd qr-uov-submission-round2/QR_UOV - Round2/Reference_Implementation
+make qruov1q127L3v156m54
+cd qruov1q127L3v156m54/refa
 ```
 
 Test:
