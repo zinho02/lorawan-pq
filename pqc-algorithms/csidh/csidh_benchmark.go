@@ -1,37 +1,51 @@
 package main
 
 import (
+	"bufio"
 	"crypto/rand"
 	"fmt"
 	"math"
+	"os"
 	"time"
 
 	"github.com/cloudflare/circl/dh/csidh"
 )
 
 const iterations = 10000
-var out[64] byte
+
+var out [64]byte
 var rng = rand.Reader
+var interruptMode = false
 
 func main() {
+	if len(os.Args) > 1 && os.Args[1] == "interrupt" {
+		interruptMode = true
+	}
+
 	var keygenTimes, pubkeyTimes, sharedTimes []float64
 
 	for i := 0; i < iterations; i++ {
-		// Key generation
+		if interruptMode {
+			waitForContinue("Press 'c' to continue to Key Generation")
+		}
 		start := time.Now()
 		priv := csidh.PrivateKey{}
 		csidh.GeneratePrivateKey(&priv, rng)
-		elapsed := time.Since(start).Seconds() * 1000 // ms
+		elapsed := time.Since(start).Seconds() * 1000
 		keygenTimes = append(keygenTimes, elapsed)
 
-		// Public key computation
+		if interruptMode {
+			waitForContinue("Press 'c' to continue to Public Key Computation")
+		}
 		start = time.Now()
 		pub := csidh.PublicKey{}
 		csidh.GeneratePublicKey(&pub, &priv, rng)
-		elapsed = time.Since(start).Seconds() * 1000 // ms
+		elapsed = time.Since(start).Seconds() * 1000
 		pubkeyTimes = append(pubkeyTimes, elapsed)
 
-		// Shared secret computation with a second key
+		if interruptMode {
+			waitForContinue("Press 'c' to continue to Shared Secret Derivation")
+		}
 		priv2 := csidh.PrivateKey{}
 		csidh.GeneratePrivateKey(&priv2, rng)
 		pub2 := csidh.PublicKey{}
@@ -39,7 +53,7 @@ func main() {
 
 		start = time.Now()
 		csidh.DeriveSecret(&out, &pub, &priv2, rng)
-		elapsed = time.Since(start).Seconds() * 1000 // ms
+		elapsed = time.Since(start).Seconds() * 1000
 		sharedTimes = append(sharedTimes, elapsed)
 	}
 
@@ -64,5 +78,16 @@ func printStats(name string, times []float64) {
 	fmt.Printf("%s:\n", name)
 	fmt.Printf("  Average Time: %.3f ms\n", mean)
 	fmt.Printf("  Std Dev:      %.3f ms\n\n", stddev)
+}
+
+func waitForContinue(prompt string) {
+	reader := bufio.NewReader(os.Stdin)
+	for {
+		fmt.Println(prompt)
+		input, _ := reader.ReadString('\n')
+		if input == "c\n" || input == "c\r\n" {
+			break
+		}
+	}
 }
 
