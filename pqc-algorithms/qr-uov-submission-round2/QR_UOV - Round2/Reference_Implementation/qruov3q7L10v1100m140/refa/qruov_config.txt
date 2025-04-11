@@ -1,1 +1,0 @@
--DQRUOV_dir=qruov3q7L10v1100m140 -DQRUOV_security_strength_category=3 -DQRUOV_q=7 -DQRUOV_L=10 -DQRUOV_v=1100 -DQRUOV_m=140 -DQRUOV_fc=2 -DQRUOV_fe=1 -DQRUOV_fc0=1
