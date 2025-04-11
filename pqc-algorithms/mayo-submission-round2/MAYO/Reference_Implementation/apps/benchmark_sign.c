@@ -60,9 +60,9 @@ void benchmark_combined(int iterations) {
         unsigned char pk[CRYPTO_PUBLICKEYBYTES];
         unsigned char sk[CRYPTO_SECRETKEYBYTES];
         unsigned char signed_msg[MESSAGE_LEN + CRYPTO_BYTES];
-        unsigned long long signed_len;
+        unsigned signed_len;
         unsigned char unsigned_msg[MESSAGE_LEN + CRYPTO_BYTES];
-        unsigned long long unsigned_len;
+        unsigned unsigned_len;
 
         struct timespec start, end;
 
