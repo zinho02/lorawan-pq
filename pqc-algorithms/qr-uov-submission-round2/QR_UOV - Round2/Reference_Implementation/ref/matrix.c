@@ -1,5 +1,4 @@
 #include "qruov.h"
-#include <x86intrin.h>
 
 typedef Fq Fq_vec ;
 
