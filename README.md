@@ -1,4 +1,4 @@
-Repository for the paper _Enabling Post-Quantum Cryptography in IoT: A LoRaWAN Static Root Keys Case_  
+Repository for the paper _Enhancing LoRaWAN Security: Addressing Static Root Keys with Post-Quantum Cryptography_  
 
 Each csv file corresponds to the measured data used in the paper.
 
