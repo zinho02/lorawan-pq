@@ -1,0 +1,4 @@
+,Energy Consumption (J),Std. Dev. Energy Consumption (J),Time (ms),Std. Dev. Time (ms)
+Secret Key Generation,0.0000429681,0.000003215,0.079,0.008
+Public Key Generation,4.878821073,0.128672,6279.049,36.042
+Shared Secret Generation,4.899131853,0.134987,6305.189,35.822
