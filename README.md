@@ -37,6 +37,12 @@ Total time (ms) of the Key Pair Update Procedure for each Data Rate (DR).
 ## [Total Root Key Renewal Procedure Time](csv/total_root_keys.csv)
 Total time (ms) of the Root Key Renewal Procedure for each Data Rate (DR).
 
+## [Total Key Pair Update Procedure Energy Consumption](csv/total_key_pair_energy.csv)
+Total energy consumption (J) of the Key Pair Update Procedure for each Data Rate (DR).
+
+## [Total Root Key Renewal Procedure Energy Consumption](csv/total_root_keys_energy.csv)
+Total energy consumption (J) of the Root Key Renewal Procedure for each Data Rate (DR).
+
 # Post-Quantum Cryptography Algorithms
 
 The [pqc-algorithms/benchmark_sign.c](pqc-algorithms/benchmark_sign.c) file was used to benchmark the results.
