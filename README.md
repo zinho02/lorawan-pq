@@ -2,7 +2,7 @@ Repository for the paper _Enhancing LoRaWAN Security: Addressing Static Root Key
 
 # CSV
 
-Each csv file corresponds to the measured data used in the paper.
+Each csv file in the [CSV folder](/csv) corresponds to the measured data used in the paper.
 
 ## [CSIDH](csv/csidh.csv)
 CSIDH time (ms) and energy (J) consumption.
@@ -39,7 +39,8 @@ Total time (ms) of the Root Key Renewal Procedure for each Data Rate (DR).
 
 # Post-Quantum Cryptography Algorithms
 
-The [benchmark_sign.c](benchmark_sign.c) file was used to benchmark the results.
+The [pqc-algorithms/benchmark_sign.c](pqc-algorithms/benchmark_sign.c) file was used to benchmark the results.
+To benchmark, in the [pqc-algorithms folder](/pqc-algorithms/):
 
 ## SQISign
 
@@ -266,4 +267,18 @@ make benchmark_sign
 Test:
 ```sh
 ./benchmark_sign
+```
+
+## CSIDH
+We evaluate the results of CSIDH using the [csidh_benchmark.go](pqc-algorithms/csidh/csidh_benchmark.go) file.
+To benchmark, in the [CSIDH folder](pqc-algorithms/csidh/):
+
+Build:
+```sh
+go mod tidy
+```
+
+Test:
+```sh
+go run csidh_benchmark.go
 ```
