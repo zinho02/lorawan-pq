@@ -13,11 +13,11 @@ Ascon-Hash256 hash function time (ms) and energy (J) consumption.
 ## [KeyID ToA](csv/keyid_toa.csv)
 Time-on-Air (ms) of the 48 KeyID bits for each Data Rate (DR).
 
+## [PKI Server Signature + Confirmation Message ToA](csv/pki_sig_ack_toa.csv)
+Time-on-Air (ms) of the Signature with the Confirmation Message from the PKI Server for each Data Rate (DR).
+
 ## [Public Key + Signature ToA](csv/pk_sig_toa.csv)
 Time-on-Air (ms) of the Public Key with the Signature for each Data Rate (DR).
-
-## [Public Key ToA](csv/pk_toa.csv)
-Time-on-Air (ms) of the Public Key for each Data Rate (DR).
 
 ## [Post-quantum Key Generation Metrics](csv/pq_key_gen.csv)
 Time (ms) and energy (J) consumption of the post-quantum signature algorithms Key Generation operation.
