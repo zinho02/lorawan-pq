@@ -1,4 +1,4 @@
-# Benchmark
+# Benchmark Signature Algorithms
 The [benchmark_sign.c](benchmark_sign.c) file was used to benchmark the results.
 
 ## SQISign
@@ -226,4 +226,18 @@ make benchmark_sign
 Test:
 ```sh
 ./benchmark_sign
+```
+
+# Benchmark CSIDH
+The [csidh-20210627/csidh_benchmark.c](csidh-20210627/csidh_benchmark.c) file was used to benchmark the results.
+
+Build:
+```
+cd csidh-20210627
+make csidh_benchmark BITS=512 FP_IMPL=fp.c UINT_IMPL=uint.c
+```
+
+Test:
+```
+./csidh_benchmark
 ```
